@@ -1,0 +1,117 @@
+.animated {
+  -webkit-animation-duration: 700ms;
+  animation-duration: 700ms;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+  }
+  50% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);  
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    transform: translateX(-300px);
+  }
+  50% {
+     -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);   
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  50% {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);  
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  50% {
+     -webkit-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    transform: translateX(-50px);   
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+.msgbox_container {
+    position: fixed;
+    bottom: 53px;
+    width: 300px;
+    color: #000;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: normal;
+    z-index: 900;
+}
+
+.msg_box_in {
+    position: relative;
+    margin: 10px;
+    text-align: left;
+    color: #fff;
+    padding: 29px 20px; 
+    border-radius: 9px;  
+}
+
+  .MsgBox_success {
+     background-color: #5cb85c;
+  }
+  .MsgBox_error {
+     background-color: #d2322d;
+  }
+  .MsgBox_warn {
+     background-color: #eea236;
+  }
+  .MsgBox_silver {
+    background-color: #C7C7C7;
+  }
+  .MsgBox_blackOpacity {
+    background-color: rgba(0,0,0, 0.5);
+  }
