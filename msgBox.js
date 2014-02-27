@@ -35,6 +35,7 @@
     }
 
   ,  defined = false
+  
   ,  guid    = {
       'error'   : 0,
       'warn'    : 0,
