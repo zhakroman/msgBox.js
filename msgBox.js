@@ -132,8 +132,9 @@ MsgBox.prototype.container = function() {
 // global export 
  
   $.msgBox = function ( option ) {
-      return  !default_option.massage || !option.massage ?  Throw(errors['msg']) : 
-        (new MsgBox( option )).create();
+      return  default_option.massage || option.massage ?  (new MsgBox( option )).create() :
+         Throw(errors['msg']) ;
+        
  };
  
 
