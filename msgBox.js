@@ -112,7 +112,7 @@ MsgBox.prototype.create = function(){
 
 MsgBox.prototype.clear = function() {
   $( this.root + ' > div[data="' + this.count + '"]' )
-    .removeClass('slideInLeft')
+    //.removeClass('slideInLeft')
     .delay( this.options.delay )
     .fadeOut( 500 , function(){
    $( this ).trigger('closed.msgBox.Event').remove()
