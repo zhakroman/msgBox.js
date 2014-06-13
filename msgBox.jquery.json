@@ -6,7 +6,7 @@
         "alerts",
         "windows"
     ],
-    "version": "1.0",
+    "version": "0.1.0",
     "author": {
         "name": "Roman Zhak and other contributors",
         "url": "https://github.com/zhak55/msgBox.js"
