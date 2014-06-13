@@ -1,7 +1,7 @@
 {
     "name": "MsgBox",
     "title": "jQuery MsgBox",
-    "description": "jQuery plugin for creating simple alerts.",
+    "description": "jQuery plugin for creating simple alerts for your site.",
     "keywords": [
         "alerts",
         "windows"
