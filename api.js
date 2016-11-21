@@ -129,20 +129,16 @@
       args = Array.prototype.slice.call(args);
 
       while(i--) list[i].apply(null, args);
-      },
-     resolve: function(){
-       this.execute(this._done, arguments);
-      },
-     reject: function(){
-       this.execute(this._fail, arguments);
-      }, 
+     },
+     resolve: function(){ this.execute(this._done, arguments); },
+     reject: function(){ this.execute(this._fail, arguments);  }, 
      done: function(callback){
       this._done.push(callback.bind({
         log : function(args) {
           console.log('Type:done ', args)
         }
       }));
-      return this;
+        return this;
       },
      fail: function(callback){
       this._fail.push(callback.bind({
@@ -151,14 +147,12 @@
         }
       }));
       return this;
-     }  
-   };
-
-   // in a few cases we've chosen optimizing script length over efficiency of code.
-// I think that is the right choice for this library.  If you're adding and
-// triggering A LOT of events, you might want to use a different library.
-var Events = {
-    convert: function(obj, handlers) {
+     }};
+    // in a few cases we've chosen optimizing script length over efficiency of code.
+    // I think that is the right choice for this library.  If you're adding and
+    // triggering A LOT of events, you might want to use a different library.
+    var Events = {
+     convert: function(obj, handlers) {
         // we store the list of handlers as a local variable inside the scope
         // so that we don't have to add random properties to the object we are
         // converting. (prefixing variables in the object with an underscore or
